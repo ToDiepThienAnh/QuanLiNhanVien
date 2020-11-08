@@ -5,6 +5,10 @@ var LopHoc = function(){
     //Thinh did it
     this.tenLopHoc= 'FE54';
     this.tenHocSinh='Thinh';
+
+    // userMinh
+    this.moTa = 'Đây là lớp fe54 đang học git';
+
     this.layDanhSachSinhVien = function(){
         
         return this.danhSachSinhVien;

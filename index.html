@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+<title>Bài tập quản lí nhân viên OOP</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center display-4 bg-dark text-white">Quản lí nhân viên</h1>
+                <div class="form-group">
+                    <p>Mã Nhân viên</p>
+                    <input id="maNhanVien" type="text" class="form-control">
+                    <p class="text-danger" id="kiemTraRong-maNhanVien"></p>
+                    <p class="text-danger" id="kiemTraTatCaLaSo-maNhanVien"></p>
+                    <p class="text-danger" id="kiemTraGiaTri-maNhanVien"></p>
+                    <p>Tên Nhân viên</p>
+                    <input id="tenNhanVien" type="text" class="form-control">
+                    <p class="text-danger" id="kiemTraRong-tenNhanVien"></p>
+                    <p class="text-danger" id="kiemTraTatCaKyTu-tenNhanVien"></p>
+                </div>
+                <div class="form-group">
+                  <p>Chức vụ</p>
+                  <select class="form-control" name="" id="chucVu">
+                      <option value="3">Giám Đốc</option>
+                      <option value="2">Quản lí</option>
+                      <option value="1">Nhân Viên</option>
+                  </select>
+                
+                  <div class="form-group">
+                      <p>Lương Cơ Bản</p>
+                      <input id="luongCoBan" type="text" class="form-control">
+                      <p class="text-danger" id="kiemTraRong-luongCoBan"></p>
+                      <p class="text-danger" id="kiemTraGiaTri-luongCoBan"></p>
+                      <p>Giờ làm trong tháng</p>
+                      <input id="gioLamTrongThang" type="text" class="form-control">
+                      <p class="text-danger" id="kiemTraRong-gioLamTrongThang"></p>
+                      <p class="text-danger" id="kiemTraGiaTri-gioLamTrongThang"></p>
+
+                  </div>
+                <div class="form-group bg-light text-right py-4">
+                    <button id="btn__Them" class="btn btn-outline-success px-3">Thêm nhân viên</button>
+                    <button id="btn__Luu" class="btn btn-outline-primary px-3">Lưu Thông Tin</button>
+                </div>
+        <table class="w-100">
+            <thead class="bg-primary" >
+                <tr class="text-white">
+                    <th class="py-2">Mã Nhân viên</th>
+                    <th>Tên Nhân viên</th>
+                    <th>Chức vụ</th>
+                    <th>Lương Cơ Bản</th>
+                    <th>Tổng Lương</th>
+                    <th>Giờ làm/tháng</th>
+                    <th>Xếp loại Nhân viên</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table__data">
+                
+            </tbody>
+        </table>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./NhanVien.js"></script>
+    <script src="./validation.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+</html>

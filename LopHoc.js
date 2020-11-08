@@ -1,6 +1,6 @@
 var LopHoc = function(){
     this.danhSachSinhVien = [];
-    // userA
+    // userMinh
     this.moTa = 'Đây là lớp fe54 đang học git';
     this.layDanhSachSinhVien = function(){
         //Thinh did it
